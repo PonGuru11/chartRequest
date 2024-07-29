@@ -1,0 +1,22 @@
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 18:22:36"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 18:22:36"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 18:22:36"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 18:22:36"}
+{"level":"info","message":"RPA Automation Package Puppeteer is Opened.","timestamp":"2024-07-29 18:22:47"}
+{"level":"info","message":"Typing UserName...","timestamp":"2024-07-29 18:22:54"}
+{"level":"info","message":"Typing UserPassword...","timestamp":"2024-07-29 18:22:57"}
+{"level":"info","message":"MainMenu Navigation Successfully...","timestamp":"2024-07-29 18:23:07"}
+{"level":"info","message":"Selecting PatientFile...","timestamp":"2024-07-29 18:23:10"}
+{"level":"info","message":"PatientFile Selected Successfully..","timestamp":"2024-07-29 18:23:10"}
+{"level":"info","message":"Selecting PatientFind...","timestamp":"2024-07-29 18:23:10"}
+{"level":"info","message":"PatientFind Selected Successfully..","timestamp":"2024-07-29 18:23:13"}
+{"level":"info","message":"Typing PatientFind...","timestamp":"2024-07-29 18:23:13"}
+{"level":"info","message":"patientFind Typed Successfully...","timestamp":"2024-07-29 18:23:22"}
+{"level":"info","message":"PatientFind First Entered Pressed..","timestamp":"2024-07-29 18:23:22"}
+{"level":"info","message":"patientFind Second Entered Successfully","timestamp":"2024-07-29 18:23:24"}
+{"level":"info","message":"Selecting PatientRequired...","timestamp":"2024-07-29 18:23:24"}
+{"level":"info","message":"PatientRequired: C Selected Successfully...","timestamp":"2024-07-29 18:23:27"}
+{"level":"info","message":"VisitInfo Choosing...","timestamp":"2024-07-29 18:23:27"}
+{"level":"info","message":"PrintNotes Selected Successfully...","timestamp":"2024-07-29 18:23:28"}
+{"level":"error","message":"Record View Page: No records found...","timestamp":"2024-07-29 18:23:30"}
+{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-29 18:23:32"}

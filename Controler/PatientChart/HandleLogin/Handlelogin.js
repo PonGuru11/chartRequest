@@ -10,7 +10,7 @@ const handleLogin = async (page, browser) => {
             await browser.close(); 
             return;
         }
-            await page.waitForNavigation(); 
+            
             patientChartLogger.info("MainMenu Navigation Successfully...");
      
     } catch (error) {

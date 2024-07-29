@@ -65,7 +65,7 @@ const patientChart = async(
                     await browser.close();
                     return;
                 }
-                patientChartLogger.info('Typing UserName...');
+                patientChartLogger.info(`Typing UserName:${decryptedUserName}`);
             } catch (error) {
                 patientChartLogger.error(`Unexpected Error: ${error.message}`);
             }
