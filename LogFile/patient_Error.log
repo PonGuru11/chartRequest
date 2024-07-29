@@ -1,0 +1,19 @@
+{"level":"error","message":"Navigation Error: Navigation timeout of 3000 ms exceeded","timestamp":"2024-07-29 10:57:53"}
+{"level":"error","message":"Record View Page: No records found...","timestamp":"2024-07-29 10:58:14"}
+{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-29 10:58:15"}
+{"level":"error","message":"Record View Page: No records found...","timestamp":"2024-07-29 11:00:48"}
+{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-29 11:00:49"}
+{"level":"error","message":"Error: Could not find any results...","timestamp":"2024-07-29 11:33:29"}
+{"level":"error","message":"Record View Page: No records found...","timestamp":"2024-07-29 11:33:40"}
+{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-29 11:33:42"}
+{"level":"error","message":"Login Page: LoginError evaluation failed: Execution context was destroyed, most likely because of a navigation.","timestamp":"2024-07-29 11:34:24"}
+{"level":"error","message":"Error: Attempted to use detached Frame 'FE9DF985EDC3F9598AEF648EF61062D8'.","timestamp":"2024-07-29 11:34:25"}
+{"level":"error","message":"Record View Page: No records found...","timestamp":"2024-07-29 11:37:58"}
+{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-29 11:37:59"}
+{"level":"error","message":"Error: Waiting for selector `.textnode` failed: Protocol error (Runtime.callFunctionOn): Target closed","timestamp":"2024-07-29 11:40:22"}
+{"level":"error","message":"Error: Could not find any results...","timestamp":"2024-07-29 11:41:04"}
+{"level":"error","message":"Error: Waiting for selector `.textnode` failed: Waiting failed: 30000ms exceeded","timestamp":"2024-07-29 11:43:32"}
+{"level":"error","message":"Error: Waiting for selector `.textnode` failed: Waiting failed: 30000ms exceeded","timestamp":"2024-07-29 11:44:27"}
+{"level":"error","message":"Error: Could not find any results...","timestamp":"2024-07-29 13:00:52"}
+{"level":"error","message":"Invalid first_name or last_name provided.","timestamp":"2024-07-29 13:12:23"}
+{"level":"error","message":"Error: document_type.charAt is not a function","timestamp":"2024-07-29 15:03:17"}
