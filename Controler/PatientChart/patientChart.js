@@ -10,6 +10,7 @@ const chartPageSelected = require('../PatientChart/ChartPrint/ChartPrint');
 const ledgerAccountPage = require('../PatientChart/LedgerAccount/LedgerAccount');
 const ledgerPrintPage = require('../PatientChart/PrintLedger/Printledger');
 const handleLogin = require('../PatientChart/HandleLogin/Handlelogin')
+require('dotenv').config
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -29,7 +30,19 @@ const patientChart = async(
     const cryptr = new Cryptr('myTotallySecretKey', { encoding: 'base64', pbkdf2Iterations: 10000, saltLength: 10 }); 
     let browser;
     try {
-        browser = await puppeteer.launch({ headless: false });
+        browser = await puppeteer.launch({ 
+        headless: false,
+        args: [
+            "--disable-setuid-sandbox",
+            "--no-sandbox",
+            "--single-process",
+            "--no-zygote",
+          ],
+          executablePath:
+            process.env.NODE_ENV === "production"
+              ? process.env.PUPPETEER_EXECUTABLE_PATH
+              : puppeteer.executablePath(),
+     });
         const page = await browser.newPage();
 
         if (!page) {
