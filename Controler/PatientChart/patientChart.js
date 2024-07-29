@@ -1,5 +1,4 @@
-const puppeteer = require('puppeteer-core');
-const { executablePath } = require('puppeteer-core');
+const puppeteer = require('puppeteer');
 const Cryptr = require('cryptr');
 const { patientChartLogger } = require('../../Logger/ChartLogger'); 
 const Script_Error = require('../../Script_Error/Script_Error');
@@ -32,9 +31,7 @@ const patientChart = async(
     let browser;
     try {
         browser = await puppeteer.launch({ 
-            executablePath: executablePath(), // Use Puppeteer's executablePath
-            headless: false, // Run in headless mode
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+        headless: false,
       
      });
         const page = await browser.newPage();
