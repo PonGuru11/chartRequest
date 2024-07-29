@@ -24,6 +24,7 @@ const downloadFile = async (first_name,last_name) => {
 
   const base64Data = data.toString('base64');
   console.log('Base64 encoded content:', base64Data);
+  
  
   fs.unlink(filePath, (err) => {
      if (err) {

@@ -1,0 +1,64 @@
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:09:33"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:09:33"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:09:33"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:09:33"}
+{"level":"info","message":"RPA Automation Package Puppeteer is Opened.","timestamp":"2024-07-29 17:09:46"}
+{"level":"info","message":"Typing UserName...","timestamp":"2024-07-29 17:09:52"}
+{"level":"info","message":"Typing UserPassword...","timestamp":"2024-07-29 17:09:54"}
+{"level":"info","message":"MainMenu Navigation Successfully...","timestamp":"2024-07-29 17:10:04"}
+{"level":"info","message":"Selecting PatientFile...","timestamp":"2024-07-29 17:10:07"}
+{"level":"info","message":"PatientFile Selected Successfully..","timestamp":"2024-07-29 17:10:08"}
+{"level":"info","message":"Selecting PatientFind...","timestamp":"2024-07-29 17:10:08"}
+{"level":"info","message":"PatientFind Selected Successfully..","timestamp":"2024-07-29 17:10:11"}
+{"level":"info","message":"Typing PatientFind...","timestamp":"2024-07-29 17:10:11"}
+{"level":"info","message":"patientFind Typed Successfully...","timestamp":"2024-07-29 17:10:20"}
+{"level":"info","message":"PatientFind First Entered Pressed..","timestamp":"2024-07-29 17:10:20"}
+{"level":"info","message":"patientFind Second Entered Successfully","timestamp":"2024-07-29 17:10:22"}
+{"level":"info","message":"Selecting PatientRequired...","timestamp":"2024-07-29 17:10:22"}
+{"level":"info","message":"PatientRequired: C Selected Successfully...","timestamp":"2024-07-29 17:10:25"}
+{"level":"info","message":"VisitInfo Choosing...","timestamp":"2024-07-29 17:10:25"}
+{"level":"info","message":"PrintNotes Selected Successfully...","timestamp":"2024-07-29 17:10:26"}
+{"level":"info","message":"PrintOption Selected Successfully...","timestamp":"2024-07-29 17:10:33"}
+{"level":"info","message":"Download Clicked.","timestamp":"2024-07-29 17:10:38"}
+{"level":"info","message":"Pdf File Download and Same Pdf file is Deleted successfully","timestamp":"2024-07-29 17:10:49"}
+{"level":"info","message":"RPA Automation Process is Running Successfully and Browser is Closed...","timestamp":"2024-07-29 17:10:53"}
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:25:21"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:25:21"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:25:21"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:25:21"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome-stable)","timestamp":"2024-07-29 17:25:21"}
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:26:00"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:26:00"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:26:00"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:26:00"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome-stable)","timestamp":"2024-07-29 17:26:00"}
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:27:13"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:27:13"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:27:13"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:27:13"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome-stable)","timestamp":"2024-07-29 17:27:13"}
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:27:49"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:27:49"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:27:49"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:27:49"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome-stable)","timestamp":"2024-07-29 17:27:49"}
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:27:51"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:27:51"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:27:51"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:27:51"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome-stable)","timestamp":"2024-07-29 17:27:51"}
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:28:15"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:28:15"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:28:15"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:28:15"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome-stable)","timestamp":"2024-07-29 17:28:15"}
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:31:49"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:31:49"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:31:49"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:31:49"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome-stable)","timestamp":"2024-07-29 17:31:49"}
+{"level":"info","message":"Patient DateOfBirth Updated...","timestamp":"2024-07-29 17:33:04"}
+{"level":"info","message":"Patient FirstName Updated...","timestamp":"2024-07-29 17:33:04"}
+{"level":"info","message":"Patient LastName Updated...","timestamp":"2024-07-29 17:33:04"}
+{"level":"info","message":"Patient Data required  Updated...","timestamp":"2024-07-29 17:33:04"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome-stable)","timestamp":"2024-07-29 17:33:04"}
