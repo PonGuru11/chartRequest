@@ -181,7 +181,7 @@ const patientChart = async(
     try {
         // browser = await puppeteer.launch({ headless: false });
         browser = await puppeteer.launch({
-            headless: true,
+            headless: false,
             args: [
                 '--no-sandbox',
                 '--disable-setuid-sandbox',
