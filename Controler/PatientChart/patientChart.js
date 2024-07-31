@@ -200,7 +200,7 @@ const patientChart = async(
 
         await page.setViewport({ height: 850, width: 1300 });
         // await page.goto(process.env.URL, { waitUntil: 'networkidle2', timeout: 60000 });
-        await page.goto(process.env.URL, { waitUntil: 'networkidle2', timeout: 120000 });
+        await page.goto(process.env.URL, { waitUntil: 'networkidle2' });
 
         const usernameSelector = 'input[name="user"]';
         await page.evaluate((usernameSelector) => {
