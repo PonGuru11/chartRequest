@@ -8,7 +8,7 @@ const loginError = async (page) => {
         });
         
         if (errorText) {
-            return 'Login Error on the page!';
+            return 'Invalid UserName or Password !';
         }
         return null;
 

@@ -1,2 +1,48 @@
-{"level":"error","message":"Record View Page: No records found...","timestamp":"2024-07-29 18:23:30"}
-{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-29 18:23:32"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 12:36:30"}
+{"level":"error","message":"Unexpected Error: res is not defined","timestamp":"2024-07-31 12:36:31"}
+{"level":"error","message":"Error: Attempted to use detached Frame '2CD3819299434A24E34A6F7DDAADF517'.","timestamp":"2024-07-31 12:36:31"}
+{"level":"error","message":"File not found: C:\\Users\\natha\\Downloads\\OPEN ITEM LEDGER.pdf","timestamp":"2024-07-31 12:36:36"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 12:43:06"}
+{"level":"error","message":"Unexpected Error: res.send is not a function","timestamp":"2024-07-31 12:43:08"}
+{"level":"error","message":"Error: Attempted to use detached Frame '165097432E5D1C8C8ABF56F6851222E7'.","timestamp":"2024-07-31 12:43:08"}
+{"level":"error","message":"File not found: C:\\Users\\natha\\Downloads\\OPEN ITEM LEDGER.pdf","timestamp":"2024-07-31 12:43:13"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 12:44:06"}
+{"level":"error","message":"Unexpected Error: res.send is not a function","timestamp":"2024-07-31 12:44:08"}
+{"level":"error","message":"Error: Attempted to use detached Frame '383467EC7DEC7579B4025897AB09123F'.","timestamp":"2024-07-31 12:44:08"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 12:55:24"}
+{"level":"error","message":"Unexpected Error: res.status is not a function","timestamp":"2024-07-31 12:55:26"}
+{"level":"error","message":"Error: Attempted to use detached Frame '2A68975CE7CEC38A09E4A6C88CDF7B36'.","timestamp":"2024-07-31 12:55:26"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 12:56:52"}
+{"level":"error","message":"Unexpected Error: res.status is not a function","timestamp":"2024-07-31 12:56:52"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 12:56:55"}
+{"level":"error","message":"Unexpected Error: res.status is not a function","timestamp":"2024-07-31 12:56:56"}
+{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-31 12:56:56"}
+{"level":"error","message":"Login Page: ScriptError evaluation failed: Cannot read properties of undefined (reading 'status')","timestamp":"2024-07-31 13:00:26"}
+{"level":"error","message":"Unexpected Error: res.status is not a function","timestamp":"2024-07-31 13:00:26"}
+{"level":"error","message":"Login Page: ScriptError evaluation failed: Cannot read properties of undefined (reading 'status')","timestamp":"2024-07-31 13:00:29"}
+{"level":"error","message":"Unexpected Error: res.status is not a function","timestamp":"2024-07-31 13:00:30"}
+{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-31 13:00:30"}
+{"level":"error","message":"Login Page: ScriptError evaluation failed: Cannot read properties of undefined (reading 'status')","timestamp":"2024-07-31 13:00:57"}
+{"level":"error","message":"Unexpected Error: res.status is not a function","timestamp":"2024-07-31 13:00:57"}
+{"level":"error","message":"Login Page: ScriptError evaluation failed: Cannot read properties of undefined (reading 'status')","timestamp":"2024-07-31 13:01:00"}
+{"level":"error","message":"Unexpected Error: res.status is not a function","timestamp":"2024-07-31 13:01:01"}
+{"level":"error","message":"Error: Protocol error (Input.dispatchKeyEvent): Session closed. Most likely the page has been closed.","timestamp":"2024-07-31 13:01:01"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 13:04:48"}
+{"level":"error","message":"Unexpected Error: res.status is not a function","timestamp":"2024-07-31 13:04:48"}
+{"level":"error","message":"Error: res.status is not a function","timestamp":"2024-07-31 13:04:48"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 13:07:25"}
+{"level":"error","message":"Unexpected Error: res is not defined","timestamp":"2024-07-31 13:07:25"}
+{"level":"error","message":"Error: res is not defined","timestamp":"2024-07-31 13:07:25"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 13:20:13"}
+{"level":"error","message":"Login Page: ScriptError text is present on the page!","timestamp":"2024-07-31 13:33:22"}
+{"level":"error","message":"Error: Could not find any results...","timestamp":"2024-07-31 13:37:57"}
+{"level":"error","message":"Error: Could not find any results...","timestamp":"2024-07-31 13:40:56"}
+{"level":"error","message":"Error: Could not find any results...","timestamp":"2024-07-31 13:42:51"}
+{"level":"error","message":"Login Page: Invalid UserName or Password !","timestamp":"2024-07-31 13:46:11"}
+{"level":"error","message":"Error occurred: errorMsg is not defined","timestamp":"2024-07-31 13:46:11"}
+{"level":"error","message":"Error: Attempted to use detached Frame 'F6C0626D607EC50A94AF522EFA89FF38'.","timestamp":"2024-07-31 13:46:12"}
+{"level":"error","message":"File not found: C:\\Users\\natha\\Downloads\\OPEN ITEM LEDGER.pdf","timestamp":"2024-07-31 13:46:17"}
+{"level":"error","message":"Login Page: Invalid UserName or Password !","timestamp":"2024-07-31 13:47:32"}
+{"level":"error","message":"Error occurred: errorMsg is not defined","timestamp":"2024-07-31 13:47:32"}
+{"level":"error","message":"Error: Attempted to use detached Frame 'FEF776B11741C9A728FD87B84CB9A9BC'.","timestamp":"2024-07-31 13:47:33"}
+{"level":"error","message":"File not found: C:\\Users\\natha\\Downloads\\OPEN ITEM LEDGER.pdf","timestamp":"2024-07-31 13:47:38"}

@@ -4,7 +4,8 @@ const ScriptError = async (page) => {
         const errorText = await page.evaluate(() => document.body.innerText.includes('Script error.'));
         
         if (errorText) {
-            return ('ScriptError text is present on the page!');
+            return 'ScriptError text is present on the page!';
+            
         }
         return null;
 
