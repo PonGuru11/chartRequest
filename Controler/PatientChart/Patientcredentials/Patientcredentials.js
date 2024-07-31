@@ -68,7 +68,7 @@ const { patientChartLogger } = require('../../../Logger/ChartLogger');
 
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-const credentialsCheck = async (page, patient_ID, browser) => {
+const credentialsCheck = async (page, patient_ID, browser,req,res) => {
     if (!browser) {
         patientChartLogger.error('Browser instance is not defined.');
         return;
@@ -82,7 +82,8 @@ const credentialsCheck = async (page, patient_ID, browser) => {
         if (!patient_ID) {
             patientChartLogger.error('PatientId Not Input...');
             await browser.close()
-            return;
+            return res.status(404).json({ message: "PatientID typing page..", data: errormsg });
+
         }
     }
 

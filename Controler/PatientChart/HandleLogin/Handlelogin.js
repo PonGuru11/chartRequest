@@ -7,7 +7,8 @@ const handleLogin = async (page, browser) => {
 
         if (loginVerify) {
             patientChartLogger.error(`Login Page: ${loginVerify}`);
-            // return res.status(404).json({ message: "Login error found", data: loginVerify });
+            await browser.close()
+            return res.status(404).json({ message: "Login error found", data: loginVerify });
             
         }  
             patientChartLogger.info("MainMenu Navigation Successfully...");

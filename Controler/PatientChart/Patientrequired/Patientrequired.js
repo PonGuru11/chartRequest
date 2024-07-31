@@ -1,7 +1,7 @@
 const { patientChartLogger } = require('../../../Logger/ChartLogger'); 
 const Script_Error = require('../../../Script_Error/Script_Error');
 
-const patientRequired=async(page,document_type,browser)=>{
+const patientRequired=async(page,document_type,browser,req,res)=>{
 
     
     const documentFirstLetter = document_type.charAt(0);
@@ -15,11 +15,14 @@ const patientRequired=async(page,document_type,browser)=>{
             if (errorMsg) {
                 patientChartLogger.error(`PatientRequired Page: ${errorMsg}`);
                 await browser.close();
-                return;
+                return res.status(404).json({ message: "PatientRequired error found", data: errorMsg });
+
             }
             patientChartLogger.info('Selecting PatientRequired...');
         } catch (error) {
             console.log("Error:",error)
+            return res.status(500).json({ message: "Error in PatientRequired function" });
+
         }
     }
     await page.keyboard.type(documentFirstLetter, { delay: 3000 });

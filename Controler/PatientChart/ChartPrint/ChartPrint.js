@@ -3,7 +3,7 @@ const Script_Error = require('../../../Script_Error/Script_Error');
 const NoRecord_Error=require('../../../NoRecord_Error/NoRecord_Error')
 
 
-const chartPrintPage = async (page, before_date, after_date,browser) => {
+const chartPrintPage = async (page, before_date, after_date,browser,req,res) => {
 
     const beforeDate = await page.waitForSelector('.w-tab-control-tabs');
     if (!beforeDate) {
@@ -74,7 +74,8 @@ const chartPrintPage = async (page, before_date, after_date,browser) => {
         if (errorMsg) {
             patientChartLogger.error(`Record View Page: ${errorMsg}`);
             await browser.close();
-            return
+            return res.status(404).json({ message: "Record View Page error found", data: errorMsg });
+
         }
         
         await page.keyboard.down('Control');
@@ -83,6 +84,8 @@ const chartPrintPage = async (page, before_date, after_date,browser) => {
         patientChartLogger.info("PrintOption Selected Successfully...");
     }catch (error) {
        console.log("Error:",error)
+       return res.status(500).json({ message: "Error in Record View Page function" });
+
     }  
 };
 

@@ -2,7 +2,7 @@ const { patientChartLogger } = require('../../../Logger/ChartLogger');
 const credentialsPatientCheck = require('../Patientcredentials/Patientcredentials');
 const Script_Error = require('../../../Script_Error/Script_Error');
 
-const patientFile = async(page, dob, first_name, last_name, patient_ID, browser) => {
+const patientFile = async(page, dob, first_name, last_name, patient_ID, browser,req,res) => {
     if (!browser) {
         patientChartLogger.error('Browser instance is not defined.');
         return;
@@ -17,11 +17,13 @@ const patientFile = async(page, dob, first_name, last_name, patient_ID, browser)
             if (errorMsg) {
                 patientChartLogger.error(`PatientFile Page: ${errorMsg}`);
                 await browser.close();
-                return;
+                return res.status(404).json({ message: "PatientFile error found", data: errorMsg });
             }
             patientChartLogger.info('Selecting PatientFile...');
         } catch (error) {
             patientChartLogger.error(`Unexpected Error: ${error.message}`);
+            return res.status(500).json({ message: "Error in PatientFile function" });
+
         }
     }
     
@@ -37,11 +39,14 @@ const patientFile = async(page, dob, first_name, last_name, patient_ID, browser)
             if (errorMsg) {
                 patientChartLogger.error(`PatientFind Page: ${errorMsg}`);
                 await browser.close();
-                return;
+                return res.status(404).json({ message: "PatientFind error found", data: errorMsg });
+                
             }
             patientChartLogger.info('Selecting PatientFind...');
         } catch (error) {
             patientChartLogger.error(`Unexpected Error: ${error.message}`);
+            return res.status(500).json({ message: "Error in PatientFind function" });
+
         }
     }
 
@@ -59,11 +64,14 @@ const patientFile = async(page, dob, first_name, last_name, patient_ID, browser)
             if (errorMsg) {
                 patientChartLogger.error(`PatientFindTyping Page: ${errorMsg}`);
                 await browser.close();
-                return;
+                return res.status(404).json({ message: "PatientFindTyping error found", data: errorMsg });
+
             }
             patientChartLogger.info('Typing PatientFind...');
         } catch (error) {
             patientChartLogger.error(`Unexpected Error: ${error.message}`);
+            return res.status(500).json({ message: "Error in PatientFindTyping function" });
+
         }
     }
 
@@ -73,7 +81,7 @@ const patientFile = async(page, dob, first_name, last_name, patient_ID, browser)
     await page.keyboard.press('Enter', { delay: 300 });
     patientChartLogger.info("PatientFind First Entered Pressed..");
 
-    await credentialsPatientCheck(page, patient_ID, browser);
+    await credentialsPatientCheck(page, patient_ID, browser,req,res);
     
     await page.keyboard.press('Enter', { delay: 300 });
     patientChartLogger.info("patientFind Second Entered Successfully");

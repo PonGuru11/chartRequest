@@ -5,7 +5,7 @@ const credentialsError = async (page) => {
         const errorText = await page.evaluate(() => document.body.innerText.includes('Could not find any results for:'));
         
         if (errorText) {
-            throw new Error('Could not find any results...');
+            throw new Error('PatientID not input so could not find any results...');
             
         }
 
