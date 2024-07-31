@@ -1,13 +1,13 @@
 const loginError = require('../../../Login_Error/Loginerror');
 const {patientChartLogger} = require('../../../Logger/ChartLogger'); 
 
-const handleLogin = async (page, browser,res) => {
+const handleLogin = async (page, browser) => {
     try {
         const loginVerify = await loginError(page);
 
         if (loginVerify) {
             patientChartLogger.error(`Login Page: ${loginVerify}`);
-            return res.status(404).json({ message: "Login error found", data: loginVerify });
+            // return res.status(404).json({ message: "Login error found", data: loginVerify });
             
         }  
             patientChartLogger.info("MainMenu Navigation Successfully...");
