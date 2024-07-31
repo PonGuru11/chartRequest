@@ -179,7 +179,17 @@ const patientChart = async(
     const cryptr = new Cryptr('myTotallySecretKey', { encoding: 'base64', pbkdf2Iterations: 10000, saltLength: 10 });
     let browser;
     try {
-        browser = await puppeteer.launch({ headless: false });
+        // browser = await puppeteer.launch({ headless: false });
+        browser = await puppeteer.launch({
+            headless: true,
+            args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-gpu',
+                '--window-size=1280x1024',
+                '--disable-dev-shm-usage'
+            ]
+        });
         const page = await browser.newPage();
 
         if (!page) {
@@ -189,7 +199,8 @@ const patientChart = async(
         patientChartLogger.info("Puppeteer is opened.");
 
         await page.setViewport({ height: 850, width: 1300 });
-        await page.goto(process.env.URL, { waitUntil: 'networkidle2', timeout: 60000 });
+        // await page.goto(process.env.URL, { waitUntil: 'networkidle2', timeout: 60000 });
+        await page.goto(process.env.URL, { waitUntil: 'networkidle2', timeout: 120000 });
 
         const usernameSelector = 'input[name="user"]';
         await page.evaluate((usernameSelector) => {
