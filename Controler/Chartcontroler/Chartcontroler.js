@@ -220,13 +220,13 @@ exports.patient = async (req, res) => {
                 await patientgetpdf(patientCredential);
             } catch (error) {
                 patientChartLogger.error("Error processing PDF request", error);               
-                res.status(400).json({ message: `Error processing PDF request: ${error.message}` });
+                // res.status(400).json({ message: `Error processing PDF request: ${error.message}` });
             }
         })();
         
     } catch (error) {
         patientChartLogger.error("Patient Credentials Posting error found", error);
-        res.status(500).json({ message: "Patient Credentials Posting error found", error: error.message });
+        // res.status(500).json({ message: "Patient Credentials Posting error found", error: error.message });
     }
 }
 
