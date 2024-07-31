@@ -180,16 +180,26 @@ const patientChart = async(
     let browser;
     try {
         // browser = await puppeteer.launch({ headless: false });
+        // browser = await puppeteer.launch({
+        //     headless: true,
+        //     args: [
+        //         '--no-sandbox',
+        //         '--disable-setuid-sandbox',
+        //         '--disable-gpu',
+        //         '--window-size=1280x1024',
+        //         '--disable-dev-shm-usage'
+        //     ]
+        // });
         browser = await puppeteer.launch({
-            headless: true,
+            headless: false,
+            ignoreDefaultArgs: ["--disable-extensions"],
             args: [
-                '--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--disable-gpu',
-                '--window-size=1280x1024',
-                '--disable-dev-shm-usage'
-            ]
-        });
+              "--no-sandbox",
+              "--use-gl=egl",
+              "--disable-setuid-sandbox",
+            ],
+            ignoreHTTPSErrors: true,
+          });
         const page = await browser.newPage();
 
         if (!page) {
