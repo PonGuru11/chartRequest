@@ -194,31 +194,17 @@ const patientChart = async(
         //second
 
 
-        // browser = await puppeteer.launch({
-        //     headless: false,
-        //     ignoreDefaultArgs: ["--disable-extensions"],
-        //     args: [
-        //       "--no-sandbox",
-        //       "--use-gl=egl",
-        //       "--disable-setuid-sandbox",
-        //     ],
-        //     ignoreHTTPSErrors: true,
-        //   });
-
-        //final
-
-        const browser = await puppeteer.launch({
+        browser = await puppeteer.launch({
+            headless: false,
+            ignoreDefaultArgs: ["--disable-extensions"],
             args: [
-              "--disable-setuid-sandbox",
               "--no-sandbox",
-              "--single-process",
-              "--no-zygote",
+              "--use-gl=egl",
+              "--disable-setuid-sandbox",
             ],
-            executablePath:
-              process.env.NODE_ENV === "production"
-                ? process.env.PUPPETEER_EXECUTABLE_PATH
-                : puppeteer.executablePath(),
+            ignoreHTTPSErrors: true,
           });
+
         const page = await browser.newPage();
 
         if (!page) {
