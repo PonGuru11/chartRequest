@@ -190,15 +190,34 @@ const patientChart = async(
         //         '--disable-dev-shm-usage'
         //     ]
         // });
-        browser = await puppeteer.launch({
-            headless: false,
-            ignoreDefaultArgs: ["--disable-extensions"],
+
+        //second
+
+
+        // browser = await puppeteer.launch({
+        //     headless: false,
+        //     ignoreDefaultArgs: ["--disable-extensions"],
+        //     args: [
+        //       "--no-sandbox",
+        //       "--use-gl=egl",
+        //       "--disable-setuid-sandbox",
+        //     ],
+        //     ignoreHTTPSErrors: true,
+        //   });
+
+        //final
+
+        const browser = await puppeteer.launch({
             args: [
-              "--no-sandbox",
-              "--use-gl=egl",
               "--disable-setuid-sandbox",
+              "--no-sandbox",
+              "--single-process",
+              "--no-zygote",
             ],
-            ignoreHTTPSErrors: true,
+            executablePath:
+              process.env.NODE_ENV === "production"
+                ? process.env.PUPPETEER_EXECUTABLE_PATH
+                : puppeteer.executablePath(),
           });
         const page = await browser.newPage();
 
