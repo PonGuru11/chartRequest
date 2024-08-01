@@ -44,3 +44,14 @@
 {"level":"info","message":"RPA Automation Process completed and Browser closed.","timestamp":"2024-08-01 19:25:46"}
 {"level":"info","message":"PDF file read and encoded successfully","timestamp":"2024-08-01 19:25:54"}
 {"level":"info","message":"PDF file deleted successfully","timestamp":"2024-08-01 19:25:55"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome)","timestamp":"2024-08-01 23:16:49"}
+{"level":"error","message":"File not found: \\tmp\\SOUTHFIELD TEST 1 - Daily Note.pdf","timestamp":"2024-08-01 23:16:55"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome)","timestamp":"2024-08-01 23:18:29"}
+{"level":"error","message":"File not found: \\tmp\\SOUTHFIELD TEST 1 - Daily Note.pdf","timestamp":"2024-08-01 23:18:34"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome)","timestamp":"2024-08-01 23:18:42"}
+{"level":"error","message":"File not found: \\tmp\\SOUTHFIELD TEST 1 - Daily Note.pdf","timestamp":"2024-08-01 23:18:48"}
+{"level":"error","message":"Error processing PDF request patientgetpdf is not a function","stack":"TypeError: patientgetpdf is not a function\n    at E:\\Node-JS\\Char\\Chart-Test\\Controler\\Chartcontroler\\Chartcontroler.js:96:35\n    at exports.patient (E:\\Node-JS\\Char\\Chart-Test\\Controler\\Chartcontroler\\Chartcontroler.js:101:23)\n    at Layer.handle [as handle_request] (E:\\Node-JS\\Char\\Chart-Test\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (E:\\Node-JS\\Char\\Chart-Test\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (E:\\Node-JS\\Char\\Chart-Test\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (E:\\Node-JS\\Char\\Chart-Test\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at E:\\Node-JS\\Char\\Chart-Test\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (E:\\Node-JS\\Char\\Chart-Test\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Node-JS\\Char\\Chart-Test\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Node-JS\\Char\\Chart-Test\\node_modules\\express\\lib\\router\\index.js:175:3)","timestamp":"2024-08-01 23:19:27"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome)","timestamp":"2024-08-01 23:19:31"}
+{"level":"error","message":"File not found: \\tmp\\SOUTHFIELD TEST 1 - Daily Note.pdf","timestamp":"2024-08-01 23:19:36"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome)","timestamp":"2024-08-01 23:23:39"}
+{"level":"error","message":"File not found: \\tmp\\SOUTHFIELD TEST 1 - Daily Note.pdf","timestamp":"2024-08-01 23:23:44"}

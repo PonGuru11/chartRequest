@@ -9,10 +9,11 @@ const downloadFile = async (first_name, last_name, res) => {
 
     const commanName = "- Daily Note.pdf";
     // const downloadPath = "C:/Users/natha/Downloads";
-    const downloadPath = "/tmp";
+    const downloadPath = "/home/ec2-user/downloads";
     const fileName = `${last_name} ${first_name} ${commanName}`;
     const filePath = path.join(downloadPath, fileName);
-
+console.log("file", filePath)
+console.log("file", fileName)
     if (!fs.existsSync(filePath)) {
       patientChartLogger.error(`File not found: ${filePath}`);
       if (!res.headersSent) {
