@@ -294,7 +294,7 @@ console.log("try");
                     await page.keyboard.press('Tab', { delay: 5000 });
                     await page.click('.button[title="Download"]');
                     patientChartLogger.info("Download Clicked.");
-                    await sleep(5000);
+                    await sleep(15000);
                     // await downloadChartFile(first_name, last_name, res);
                     await browser.close();
                     patientChartLogger.info("RPA Automation Process completed and Browser closed.");
