@@ -186,6 +186,7 @@ const patientChart = async(
             args: [
               "--no-sandbox",
               "--use-gl=egl",
+              '--disable-gpu', 
               "--disable-setuid-sandbox",
             ],
             ignoreHTTPSErrors: true,
