@@ -8,7 +8,8 @@ const downloadFile = async (first_name, last_name, res) => {
     await sleep(5000);
 
     const commanName = "- Daily Note.pdf";
-    const downloadPath = "C:/Users/natha/Downloads";
+    // const downloadPath = "C:/Users/natha/Downloads";
+    const downloadPath = "/tmp";
     const fileName = `${last_name} ${first_name} ${commanName}`;
     const filePath = path.join(downloadPath, fileName);
 

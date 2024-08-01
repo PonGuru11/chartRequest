@@ -180,6 +180,7 @@ const patientChart = async(
     let browser;
     try {
         browser = await puppeteer.launch({
+            executablePath: '/usr/bin/google-chrome',
             headless: false,
             ignoreDefaultArgs: ["--disable-extensions"],
             args: [

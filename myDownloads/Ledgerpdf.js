@@ -58,7 +58,8 @@ const downloadFile = async (res) => {
     try {
         await sleep(5000);
 
-        const downloadPath = 'C:/Users/natha/Downloads';
+        // const downloadPath = 'C:/Users/natha/Downloads';
+        const downloadPath = "/tmp";
         const fileName = 'OPEN ITEM LEDGER.pdf';
         const filePath = path.join(downloadPath, fileName);
 
