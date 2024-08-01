@@ -181,7 +181,7 @@ const patientChart = async(
     try {
         browser = await puppeteer.launch({
             executablePath: '/usr/bin/google-chrome',
-            headless: false,
+            headless: true,
             ignoreDefaultArgs: ["--disable-extensions"],
             args: [
               "--no-sandbox",
@@ -191,7 +191,7 @@ const patientChart = async(
             ignoreHTTPSErrors: true,
           });
          
-
+console.log("try");
         const page = await browser.newPage();
 
         if (!page) {
@@ -219,6 +219,7 @@ const patientChart = async(
         }
         
         try {
+            console.log("try222");
             const errorMsg = await Script_Error(page);
             if (errorMsg) {
                 patientChartLogger.error(`Login Page: ${errorMsg}`);
