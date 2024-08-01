@@ -179,44 +179,17 @@ const patientChart = async(
     const cryptr = new Cryptr('myTotallySecretKey', { encoding: 'base64', pbkdf2Iterations: 10000, saltLength: 10 });
     let browser;
     try {
-        // browser = await puppeteer.launch({ headless: false });
-        // browser = await puppeteer.launch({
-        //     headless: true,
-        //     args: [
-        //         '--no-sandbox',
-        //         '--disable-setuid-sandbox',
-        //         '--disable-gpu',
-        //         '--window-size=1280x1024',
-        //         '--disable-dev-shm-usage'
-        //     ]
-        // });
-
-        //second
-
-
-        // browser = await puppeteer.launch({
-        //     headless: false,
-        //     ignoreDefaultArgs: ["--disable-extensions"],
-        //     args: [
-        //       "--no-sandbox",
-        //       "--use-gl=egl",
-        //       "--disable-setuid-sandbox",
-        //     ],
-        //     ignoreHTTPSErrors: true,
-        //   });
-
-        
         browser = await puppeteer.launch({
-            executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
+            headless: false,
+            ignoreDefaultArgs: ["--disable-extensions"],
             args: [
-              // Required for Docker version of Puppeteer
-              '--no-sandbox',
-              '--disable-setuid-sandbox',
-              // This will write shared memory files into /tmp instead of /dev/shm,
-              // because Docker’s default for /dev/shm is 64MB
-              '--disable-dev-shm-usage'
+              "--no-sandbox",
+              "--use-gl=egl",
+              "--disable-setuid-sandbox",
             ],
+            ignoreHTTPSErrors: true,
           });
+         
 
         const page = await browser.newPage();
 
