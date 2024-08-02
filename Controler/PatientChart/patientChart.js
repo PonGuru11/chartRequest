@@ -195,7 +195,15 @@ const patientChart = async(
          
 console.log("try");
         const page = await browser.newPage();
-
+        try {
+            await page._client.send('Page.setDownloadBehavior', {
+                behavior: 'allow',
+                downloadPath: '/tmp'
+            });
+            console.log('Download behavior set successfully');
+        } catch (error) {
+            console.error('Error setting download behavior:', error);
+        }
         if (!page) {
             patientChartLogger.error("Puppeteer is not opening");
             return res.status(400).json({ message: "Puppeteer is not opening" });
