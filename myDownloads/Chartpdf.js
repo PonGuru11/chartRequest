@@ -12,7 +12,7 @@ const downloadFile = async (first_name, last_name, res) => {
   try {
     await sleep(5000);
 
-    // const commanName = "- Daily Note.pdf";
+    const commanName = "- Daily Note.pdf";
     // const downloadPath = "C:/Users/natha/Downloads";
     const downloadPath = "/home/ec2-user/Downloads";
     const formattedFirstName = capitalize(first_name);
