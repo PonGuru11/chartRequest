@@ -9,7 +9,7 @@ const downloadFile = async (first_name, last_name, res) => {
 
     const commanName = "- Daily Note.pdf";
     // const downloadPath = "C:/Users/natha/Downloads";
-    const downloadPath = "/home/ec2-user/downloads";
+    const downloadPath = "/home/ec2-user/Downloads";
     const fileName = `${last_name} ${first_name} ${commanName}`;
     const filePath = path.join(downloadPath, fileName);
 console.log("file", filePath)
