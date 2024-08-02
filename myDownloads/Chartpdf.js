@@ -7,13 +7,12 @@ const downloadFile = async (first_name, last_name, res) => {
   try {
     await sleep(5000);
 
-    const commanName = "- Daily Note.pdf";
+    // const commanName = "- Daily Note.pdf";
     // const downloadPath = "C:/Users/natha/Downloads";
     const downloadPath = "/home/ec2-user/Downloads";
     // const fileName = `${last_name} ${first_name} ${commanName}`;
     const filePath = path.join(downloadPath, "Southfield Test 1 - Daily Note.pdf");
 console.log("file", filePath)
-console.log("file", fileName)
     if (!fs.existsSync(filePath)) {
       patientChartLogger.error(`File not found: ${filePath}`);
       if (!res.headersSent) {
