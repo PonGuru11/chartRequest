@@ -3,6 +3,11 @@ const fs = require("fs");
 const { patientChartLogger } = require("../Logger/ChartLogger");
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+const capitalize = (str) => {
+  if (typeof str !== 'string') return '';
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+};
+
 const downloadFile = async (first_name, last_name, res) => {
   try {
     await sleep(5000);
@@ -10,8 +15,10 @@ const downloadFile = async (first_name, last_name, res) => {
     // const commanName = "- Daily Note.pdf";
     // const downloadPath = "C:/Users/natha/Downloads";
     const downloadPath = "/home/ec2-user/Downloads";
-    // const fileName = `${last_name} ${first_name} ${commanName}`;
-    const filePath = path.join(downloadPath, "Southfield Test 1 - Daily Note.pdf");
+    const formattedFirstName = capitalize(first_name);
+    const formattedLastName = capitalize(last_name)
+    const fileName = `${formattedLastName} ${formattedFirstName} ${commanName}`;
+    const filePath = path.join(downloadPath, fileName);
 console.log("file", filePath)
     if (!fs.existsSync(filePath)) {
       patientChartLogger.error(`File not found: ${filePath}`);

@@ -59,8 +59,8 @@ const downloadFile = async (res) => {
         await sleep(5000);
 
         // const downloadPath = 'C:/Users/natha/Downloads';
-        const downloadPath = "/tmp";
-        const fileName = 'OPEN ITEM LEDGER.pdf';
+        const downloadPath = "/home/ec2-user/Downloads";
+        const fileName = 'Open Item Ledger.pdf';
         const filePath = path.join(downloadPath, fileName);
 
         if (!fs.existsSync(filePath)) {
