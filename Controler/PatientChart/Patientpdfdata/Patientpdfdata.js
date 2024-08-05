@@ -90,15 +90,20 @@ exports.patientpdf = async (req, res) => {
         });
 
         if (success) {
-            if (document_type === 'Chart') {
+            if (!Array.isArray(document_type)) {
+                return res.status(400).json({ message: "document_type should be an array." });
+            }
+            for (const type of document_type) {
+            if (type === 'Chart') {
                 await downloadChartFile(first_name, last_name, res);
-            } else if (document_type === 'Ledger') {
+            } else if (type === 'Ledger') {
                 await downloadLedgerFile(res);
             } else {
                 if (!res.headersSent) {
                     return res.status(400).json({ message: "Invalid document_type provided." });
                 }
             }
+        }
         }
     } catch (error) {
         console.log("Error:", error);

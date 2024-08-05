@@ -286,22 +286,60 @@ console.log("try");
 
         await patientFileSelected(page, dob, first_name, last_name, patient_ID, browser,req,res);
 
-        const handleDocumentType = async () => {
+        // const handleDocumentType = async () => {
+        //     try {
+        //         await patientRequiredSelected(page, document_type, browser,req,res);
+        //         if (document_type === 'Chart') {
+        //             await chartPageSelected(page, before_date, after_date, browser,req,res);
+        //             await page.keyboard.press('Tab', { delay: 5000 });
+        //             await page.click('.button[title="Download"]');
+        //             patientChartLogger.info("Download Clicked.");
+        //             await sleep(15000);
+        //             // await downloadChartFile(first_name, last_name, res);
+        //             await browser.close();
+        //             patientChartLogger.info("RPA Automation Process completed and Browser closed.");
+        //             // return res.status(200).json({ message: "Chart file downloaded successfully" });
+        //         } else if (document_type === 'Ledger') {
+        //             await ledgerAccountPage(page, browser,req,res);
+        //             await ledgerPrintPage(page, browser,req,res);
+        //             await sleep(5000);
+        //             await page.keyboard.press('Tab', { delay: 200 });
+        //             await page.keyboard.press('Tab', { delay: 200 });
+        //             await page.keyboard.press('Tab', { delay: 200 });
+        //             await page.keyboard.press('Tab', { delay: 200 });
+        //             await page.keyboard.press('Enter', { delay: 500 });
+        //             await sleep(5000);
+        //             // await downloadLedgerFile(res);
+        //             await browser.close();
+        //             patientChartLogger.info("RPA Automation Process completed and Browser closed.");
+        //             // return res.status(200).json({ message: "Ledger file downloaded successfully" });
+        //         } else {
+        //             patientChartLogger.error("Invalid document_type provided");
+        //             return res.status(400).json({ message: "Invalid document_type provided" });
+        //         }
+        //     } catch (error) {
+        //         patientChartLogger.error(`Error in handleDocumentType function: ${error.message}`);
+        //         return res.status(500).json({ message: "Error in handleDocumentType function" });
+        //     }
+        // };
+
+        // await handleDocumentType();
+
+
+        for (const type of document_type) {
             try {
-                await patientRequiredSelected(page, document_type, browser,req,res);
-                if (document_type === 'Chart') {
-                    await chartPageSelected(page, before_date, after_date, browser,req,res);
+                await patientRequiredSelected(page, type, browser, req, res);
+
+                if (type === 'Chart') {
+                    await chartPageSelected(page, before_date, after_date, browser, req, res);
                     await page.keyboard.press('Tab', { delay: 5000 });
                     await page.click('.button[title="Download"]');
                     patientChartLogger.info("Download Clicked.");
                     await sleep(15000);
                     // await downloadChartFile(first_name, last_name, res);
-                    await browser.close();
-                    patientChartLogger.info("RPA Automation Process completed and Browser closed.");
-                    // return res.status(200).json({ message: "Chart file downloaded successfully" });
-                } else if (document_type === 'Ledger') {
-                    await ledgerAccountPage(page, browser,req,res);
-                    await ledgerPrintPage(page, browser,req,res);
+                } else if (type === 'Ledger') {
+                    await ledgerAccountPage(page, browser, req, res);
+                    await ledgerPrintPage(page, browser, req, res);
                     await sleep(5000);
                     await page.keyboard.press('Tab', { delay: 200 });
                     await page.keyboard.press('Tab', { delay: 200 });
@@ -310,20 +348,20 @@ console.log("try");
                     await page.keyboard.press('Enter', { delay: 500 });
                     await sleep(5000);
                     // await downloadLedgerFile(res);
-                    await browser.close();
-                    patientChartLogger.info("RPA Automation Process completed and Browser closed.");
-                    // return res.status(200).json({ message: "Ledger file downloaded successfully" });
                 } else {
                     patientChartLogger.error("Invalid document_type provided");
                     return res.status(400).json({ message: "Invalid document_type provided" });
                 }
             } catch (error) {
-                patientChartLogger.error(`Error in handleDocumentType function: ${error.message}`);
-                return res.status(500).json({ message: "Error in handleDocumentType function" });
+                patientChartLogger.error(`Error processing document type ${type}: ${error.message}`);
+                return res.status(500).json({ message: `Error processing document type ${type}`, error: error.message });
             }
-        };
+        }
 
-        await handleDocumentType();
+        patientChartLogger.info("RPA Automation Process completed and Browser closed.");
+      
+
+
     } catch (error) {
         patientChartLogger.error(`Error: ${error.message}`);
         return res.status(500).json({ message: "Internal Server Error" });
