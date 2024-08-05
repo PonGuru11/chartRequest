@@ -95,7 +95,7 @@ exports.patient = async (req, res) => {
                         try {
                             await patientgetpdf(req,res);
                         } catch (error) {
-                            patientChartLogger.error("Error processing PDF request", error);               
+                            patientChartLogger.error("Error processing at PDF request", error);               
                             
                         }
                     })();
