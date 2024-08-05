@@ -82,11 +82,11 @@ exports.patient = async (req, res) => {
             if (!last_name) missingParams.push("LastName");
             if (!document_type) missingParams.push("DocumentType");
 
-            patientChartLogger.error(`${missingParams.join(', ')} not updated.`);
-            return res.status(400).json({ message: `${missingParams.join(', ')} not updated.` });
+            patientChartLogger.error(`${missingParams.join(', ')} not found.`);
+            return res.status(400).json({ message: `${missingParams.join(', ')} not found.` });
         }
         res.status(201).json({
-                        Statuses: true,
+                        Status: true,
                         Message: "Patient credentials updated",
                         request_id: `${request_id}`
                     });
