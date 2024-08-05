@@ -19,7 +19,7 @@ const downloadFile = async (first_name, last_name, res) => {
     const formattedLastName = capitalize(last_name)
     const fileName = `${formattedLastName} ${formattedFirstName} ${commanName}`;
     const filePath = path.join(downloadPath, fileName);
-console.log("file", filePath)
+console.log("file", filePath,fileName)
     if (!fs.existsSync(filePath)) {
       patientChartLogger.error(`File not found: ${filePath}`);
       if (!res.headersSent) {
