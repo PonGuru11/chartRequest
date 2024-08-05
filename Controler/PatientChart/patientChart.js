@@ -287,10 +287,9 @@ console.log("try");
         await patientFileSelected(page, dob, first_name, last_name, patient_ID, browser,req,res);
 
         const handleDocumentType = async () => {
-            for (const type of document_type) {
             try {
-                await patientRequiredSelected(page, type, browser,req,res);
-                if (type === 'Chart') {
+                await patientRequiredSelected(page, document_type, browser,req,res);
+                if (document_type === 'Chart') {
                     await chartPageSelected(page, before_date, after_date, browser,req,res);
                     await page.keyboard.press('Tab', { delay: 5000 });
                     await page.click('.button[title="Download"]');
@@ -300,7 +299,7 @@ console.log("try");
                     await browser.close();
                     patientChartLogger.info("RPA Automation Process completed and Browser closed.");
                     // return res.status(200).json({ message: "Chart file downloaded successfully" });
-                } else if (type === 'Ledger') {
+                } else if (document_type === 'Ledger') {
                     await ledgerAccountPage(page, browser,req,res);
                     await ledgerPrintPage(page, browser,req,res);
                     await sleep(5000);
@@ -322,7 +321,6 @@ console.log("try");
                 patientChartLogger.error(`Error in handleDocumentType function: ${error.message}`);
                 return res.status(500).json({ message: "Error in handleDocumentType function" });
             }
-        }
         };
 
         await handleDocumentType();
