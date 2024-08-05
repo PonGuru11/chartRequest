@@ -94,7 +94,7 @@ exports.patientpdf = async (req, res) => {
                 return res.status(400).json({ message: "document_type should be an array." });
             }
             for (const type of document_type) {
-            if (type === 'Chart') {
+            if (type === 'Medical') {
                 await downloadChartFile(first_name, last_name, res);
             } else if (type === 'Ledger') {
                 await downloadLedgerFile(res);

@@ -330,7 +330,7 @@ console.log("try");
             try {
                 await patientRequiredSelected(page, type, browser, req, res);
 
-                if (type === 'Chart') {
+                if (type === 'Medical') {
                     await chartPageSelected(page, before_date, after_date, browser, req, res);
                     await page.keyboard.press('Tab', { delay: 5000 });
                     await page.click('.button[title="Download"]');
