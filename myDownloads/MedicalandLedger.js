@@ -12,7 +12,7 @@ const MedicalandLedger = async (first_name, last_name, res, recordErrorMsg) => {
   try {
     if (recordErrorMsg) {
       const recoredError = "No Medical Records Found"
-      const downloadPath = "C:/Users/natha/Downloads";
+      const downloadPath = "/home/ec2-user/Downloads";
       const ledgerFileName = "Open Item Ledger.pdf";
       const ledgerFilePath = path.join(downloadPath, ledgerFileName);
 
@@ -75,7 +75,7 @@ const MedicalandLedger = async (first_name, last_name, res, recordErrorMsg) => {
         await sleep(5000);
 
         const commanName = "- Daily Note.pdf";
-        const downloadPath = "C:/Users/natha/Downloads";
+        const downloadPath = "/home/ec2-user/Downloads";
         const formattedFirstName = capitalize(first_name);
         const formattedLastName = capitalize(last_name);
         const fileName = `${formattedLastName} ${formattedFirstName} ${commanName}`;
