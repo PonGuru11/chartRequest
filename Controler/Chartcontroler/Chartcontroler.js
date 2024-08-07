@@ -99,7 +99,7 @@ exports.patient = async (req, res) => {
                             
                         }
                     })();
-        // await patientgetpdf.patientpdf(req, res);
+        
     } catch (error) {
         patientChartLogger.error(`Error in patient function: ${error.message}`);
         return res.status(500).json({ message: "Error processing patient request", error: error.message });
