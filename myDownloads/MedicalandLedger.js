@@ -151,8 +151,8 @@ const MedicalandLedger = async (first_name, last_name, res, recordErrorMsg) => {
               res.status(200).json({
                 Status: "True",
                 message: "Medical Records sent successfully",
-                data: base64Data,
-                ledgerData: ledgerBase64,
+                MedicalData: base64Data,
+                LedgerData: ledgerBase64,
               });
 
               // Delete files
