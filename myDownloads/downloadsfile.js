@@ -8,6 +8,7 @@ const capitalize = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 };
 
+
 const MedicalandLedger = async (first_name, last_name, res) => {
   
 

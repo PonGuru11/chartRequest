@@ -118,8 +118,6 @@ const medicalPrint = async (
 
     await sleep(10000)
 
-
-
     if(recordErrorMsg){
         await downloadMedicalAndLedgerFile(
           first_name,
