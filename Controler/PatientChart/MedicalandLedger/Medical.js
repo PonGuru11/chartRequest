@@ -115,7 +115,10 @@ const medicalPrint = async (
     await page.keyboard.press("Tab", { delay: 200 });
     await page.keyboard.press("Tab", { delay: 200 });
     await page.keyboard.press("Enter", { delay: 500 });
-    await sleep(5000);
+
+    await sleep(10000)
+
+
 
     if(recordErrorMsg){
         await downloadMedicalAndLedgerFile(
@@ -124,6 +127,7 @@ const medicalPrint = async (
           res,
           recordErrorMsg
         )
+
       }else{
         await downloadFiles(first_name,last_name,res)
       }
