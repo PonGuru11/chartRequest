@@ -342,7 +342,7 @@ const patientChart = async (
     //         }
 
     if (document_type.length === 1) {
-      // Single document type
+    
       const type = document_type[0];
 
       if (type === "Medical") {
