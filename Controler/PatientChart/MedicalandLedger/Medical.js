@@ -5,6 +5,7 @@ const patientRequiredSelected = require("../../PatientChart/Patientrequired/Pati
 const ledgerAccountPage = require("../../PatientChart/LedgerAccount/LedgerAccount");
 const ledgerPrintPage = require("../../PatientChart/PrintLedger/Printledger");
 const downloadMedicalAndLedgerFile = require("../../../myDownloads/MedicalandLedger");
+const downloadFiles = require('../../../myDownloads/downloadsfile')
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const medicalPrint = async (
@@ -116,12 +117,16 @@ const medicalPrint = async (
     await page.keyboard.press("Enter", { delay: 500 });
     await sleep(5000);
 
-    await downloadMedicalAndLedgerFile(
-      first_name,
-      last_name,
-      res,
-      recordErrorMsg
-    );
+    if(recordErrorMsg){
+        await downloadMedicalAndLedgerFile(
+          first_name,
+          last_name,
+          res,
+          recordErrorMsg
+        )
+      }else{
+        await downloadFiles(first_name,last_name,res)
+      }
   } catch (error) {
     console.log("Error:", error);
     return res
