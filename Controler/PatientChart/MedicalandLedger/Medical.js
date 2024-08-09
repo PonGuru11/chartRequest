@@ -106,7 +106,7 @@ const medicalPrint = async (
       await sleep(5000);
     
     }
-    await patientRequiredSelected(page, "Ledger", browser, req, res);
+    await patientRequiredSelected(page, "Billing", browser, req, res);
     await ledgerAccountPage(page, browser, req, res);
     await ledgerPrintPage(page, browser, req, res);
     await sleep(5000);

@@ -14,7 +14,7 @@ const MedicalandLedger = async (first_name, last_name, res) => {
 
       try {
         await sleep(5000);
-        console.log(">>>>>>code running",)
+        
 
         const commanName = "- Daily Note.pdf";
         const downloadPath = "/home/ec2-user/Downloads"
