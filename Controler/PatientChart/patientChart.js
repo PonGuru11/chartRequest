@@ -38,9 +38,9 @@ const patientChart = async (
   let browser;
   try {
     browser = await puppeteer.launch({
-      // executablePath: "/usr/bin/google-chrome",
-      // headless: true,
-      headless : false,
+      executablePath: "/usr/bin/google-chrome",
+      headless: true,
+      // headless : false,
       ignoreDefaultArgs: ["--disable-extensions"],
       args: [
         "--no-sandbox",

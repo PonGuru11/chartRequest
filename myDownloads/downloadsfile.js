@@ -17,8 +17,8 @@ const MedicalandLedger = async (first_name, last_name, res) => {
         
 
         const commanName = "- Daily Note.pdf";
-        const downloadPath = "/home/ec2-user/Downloads"
-        // const downloadPath = "C:/Users/mechg/Downloads";
+        // const downloadPath = "/home/ec2-user/Downloads"
+        const downloadPath = "C:/Users/mechg/Downloads";
         const formattedFirstName = capitalize(first_name);
         const formattedLastName = capitalize(last_name);
         const fileName = `${formattedFirstName} ${formattedLastName} ${commanName}`;
