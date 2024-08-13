@@ -84,7 +84,7 @@ await sleep(5000);
         await page.keyboard.press('KeyP', { delay: 5000 });
         await page.keyboard.up('Control');
         patientChartLogger.info("PrintOption Selected Successfully...");
-        await sleep(10000)
+        await sleep(20000)
     }catch (error) {
        console.log("Error:",error)
        return res.status(500).json({ message: "Error in Record View Page function" });
