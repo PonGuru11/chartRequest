@@ -79,7 +79,7 @@ const MedicalandLedger = async (first_name, last_name, res, recordErrorMsg) => {
         const downloadPath = "/home/ec2-user/Downloads";
         const formattedFirstName = capitalize(first_name);
         const formattedLastName = capitalize(last_name);
-        const fileName = `${formattedLastName} ${formattedFirstName} ${commanName}`;
+        const fileName = `${formattedFirstName} ${formattedLastName} ${commanName}`;
         const filePath = path.join(downloadPath, fileName);
 
         const ledgerFileName = "Open Item Ledger.pdf";

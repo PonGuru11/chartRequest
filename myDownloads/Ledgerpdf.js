@@ -1,8 +1,3 @@
-
-
-
-
-
 const path = require('path');
 const fs = require('fs');
 const { patientChartLogger } = require('../Logger/ChartLogger');

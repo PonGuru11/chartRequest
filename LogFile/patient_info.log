@@ -1,0 +1,122 @@
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:12:35"}
+{"level":"info","message":"Typing Username: CR-JV-10","timestamp":"2024-08-13 20:12:38"}
+{"level":"info","message":"Typing Password...","timestamp":"2024-08-13 20:12:40"}
+{"level":"error","message":"Login Page: LoginError evaluation failed: Execution context was destroyed, most likely because of a navigation.","timestamp":"2024-08-13 20:12:48"}
+{"level":"error","message":"File not found: C:\\Users\\mechg\\Downloads\\Jennifer Fuca - Daily Note.pdf","timestamp":"2024-08-13 20:12:54"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:13:02"}
+{"level":"info","message":"Typing Username: CR-JV-10","timestamp":"2024-08-13 20:13:05"}
+{"level":"info","message":"Typing Password...","timestamp":"2024-08-13 20:13:08"}
+{"level":"error","message":"Login Page: LoginError evaluation failed: Execution context was destroyed, most likely because of a navigation.","timestamp":"2024-08-13 20:13:16"}
+{"level":"error","message":"File not found: C:\\Users\\mechg\\Downloads\\Jennifer Fuca - Daily Note.pdf","timestamp":"2024-08-13 20:13:21"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:13:46"}
+{"level":"error","message":"Error: net::ERR_NETWORK_CHANGED at https://healthquest.raintreeinc.com/webdocumentation","timestamp":"2024-08-13 20:14:10"}
+{"level":"error","message":"File not found: C:\\Users\\mechg\\Downloads\\Jennifer Fuca - Daily Note.pdf","timestamp":"2024-08-13 20:14:20"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:14:26"}
+{"level":"error","message":"Error: net::ERR_NAME_NOT_RESOLVED at https://healthquest.raintreeinc.com/webdocumentation","timestamp":"2024-08-13 20:14:29"}
+{"level":"error","message":"File not found: C:\\Users\\mechg\\Downloads\\Jennifer Fuca - Daily Note.pdf","timestamp":"2024-08-13 20:14:36"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:14:52"}
+{"level":"info","message":"Typing Username: CR-JV-10","timestamp":"2024-08-13 20:14:55"}
+{"level":"info","message":"Typing Password...","timestamp":"2024-08-13 20:14:58"}
+{"level":"error","message":"Login Page: LoginError evaluation failed: Execution context was destroyed, most likely because of a navigation.","timestamp":"2024-08-13 20:15:05"}
+{"level":"error","message":"File not found: C:\\Users\\mechg\\Downloads\\Jennifer Fuca - Daily Note.pdf","timestamp":"2024-08-13 20:15:11"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:15:53"}
+{"level":"info","message":"Typing Username: CR-JV-10","timestamp":"2024-08-13 20:15:57"}
+{"level":"info","message":"Typing Password...","timestamp":"2024-08-13 20:15:59"}
+{"level":"error","message":"Login Page: LoginError evaluation failed: Execution context was destroyed, most likely because of a navigation.","timestamp":"2024-08-13 20:16:07"}
+{"level":"error","message":"File not found: C:\\Users\\mechg\\Downloads\\Jennifer Fuca - Daily Note.pdf","timestamp":"2024-08-13 20:16:12"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:17:31"}
+{"level":"info","message":"Typing Username: CR-JV-10","timestamp":"2024-08-13 20:17:34"}
+{"level":"info","message":"Typing Password...","timestamp":"2024-08-13 20:17:37"}
+{"level":"info","message":"MainMenu Navigation Successfully...","timestamp":"2024-08-13 20:17:44"}
+{"level":"info","message":"Selecting PatientFile...","timestamp":"2024-08-13 20:17:50"}
+{"level":"info","message":"PatientFile Selected Successfully..","timestamp":"2024-08-13 20:17:50"}
+{"level":"info","message":"Selecting PatientFind...","timestamp":"2024-08-13 20:17:50"}
+{"level":"info","message":"PatientFind Selected Successfully..","timestamp":"2024-08-13 20:17:53"}
+{"level":"info","message":"Typing PatientFind...","timestamp":"2024-08-13 20:17:53"}
+{"level":"info","message":"patientFind Typed Successfully...","timestamp":"2024-08-13 20:18:00"}
+{"level":"info","message":"PatientFind First Entered Pressed..","timestamp":"2024-08-13 20:18:00"}
+{"level":"info","message":"patientFind Second Entered Successfully","timestamp":"2024-08-13 20:18:03"}
+{"level":"info","message":"Selecting PatientRequired...","timestamp":"2024-08-13 20:18:03"}
+{"level":"info","message":"PatientRequired: C Selected Successfully...","timestamp":"2024-08-13 20:18:06"}
+{"level":"info","message":"VisitInfo Choosing...","timestamp":"2024-08-13 20:18:06"}
+{"level":"info","message":"AfterDate Typed Successfully...","timestamp":"2024-08-13 20:18:11"}
+{"level":"info","message":"BeforeDate Typed Successfully...","timestamp":"2024-08-13 20:18:12"}
+{"level":"info","message":"PrintNotes Selected Successfully...","timestamp":"2024-08-13 20:18:13"}
+{"level":"info","message":"PrintOption Selected Successfully...","timestamp":"2024-08-13 20:18:20"}
+{"level":"info","message":"Tab button Clicked.","timestamp":"2024-08-13 20:19:30"}
+{"level":"error","message":"Error: No element found for selector: .button[title=\"Download\"]","timestamp":"2024-08-13 20:19:35"}
+{"level":"error","message":"File not found: C:\\Users\\mechg\\Downloads\\Jennifer Fuca - Daily Note.pdf","timestamp":"2024-08-13 20:19:41"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:20:02"}
+{"level":"info","message":"Typing Username: CR-JV-10","timestamp":"2024-08-13 20:20:05"}
+{"level":"info","message":"Typing Password...","timestamp":"2024-08-13 20:20:08"}
+{"level":"info","message":"MainMenu Navigation Successfully...","timestamp":"2024-08-13 20:20:15"}
+{"level":"info","message":"Selecting PatientFile...","timestamp":"2024-08-13 20:20:21"}
+{"level":"info","message":"PatientFile Selected Successfully..","timestamp":"2024-08-13 20:20:21"}
+{"level":"info","message":"Selecting PatientFind...","timestamp":"2024-08-13 20:20:22"}
+{"level":"info","message":"PatientFind Selected Successfully..","timestamp":"2024-08-13 20:20:25"}
+{"level":"info","message":"Typing PatientFind...","timestamp":"2024-08-13 20:20:25"}
+{"level":"info","message":"patientFind Typed Successfully...","timestamp":"2024-08-13 20:20:31"}
+{"level":"info","message":"PatientFind First Entered Pressed..","timestamp":"2024-08-13 20:20:32"}
+{"level":"info","message":"patientFind Second Entered Successfully","timestamp":"2024-08-13 20:20:34"}
+{"level":"info","message":"Selecting PatientRequired...","timestamp":"2024-08-13 20:20:34"}
+{"level":"info","message":"PatientRequired: C Selected Successfully...","timestamp":"2024-08-13 20:20:37"}
+{"level":"info","message":"VisitInfo Choosing...","timestamp":"2024-08-13 20:20:37"}
+{"level":"info","message":"AfterDate Typed Successfully...","timestamp":"2024-08-13 20:20:43"}
+{"level":"info","message":"BeforeDate Typed Successfully...","timestamp":"2024-08-13 20:20:43"}
+{"level":"info","message":"PrintNotes Selected Successfully...","timestamp":"2024-08-13 20:20:44"}
+{"level":"info","message":"PrintOption Selected Successfully...","timestamp":"2024-08-13 20:20:52"}
+{"level":"info","message":"Tab button Clicked.","timestamp":"2024-08-13 20:22:02"}
+{"level":"info","message":"Medical Download Clicked.","timestamp":"2024-08-13 20:22:07"}
+{"level":"info","message":"RPA Automation Process completed and Browser closed.","timestamp":"2024-08-13 20:22:57"}
+{"level":"info","message":"PDF file read and encoded successfully","timestamp":"2024-08-13 20:23:03"}
+{"level":"info","message":"PDF file deleted successfully","timestamp":"2024-08-13 20:23:03"}
+{"level":"error","message":"Error processing at PDF request patientgetpdf is not a function","stack":"TypeError: patientgetpdf is not a function\n    at E:\\Chart\\chartRequest\\Controler\\Chartcontroler\\Chartcontroler.js:96:35\n    at exports.patient (E:\\Chart\\chartRequest\\Controler\\Chartcontroler\\Chartcontroler.js:101:23)\n    at Layer.handle [as handle_request] (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\index.js:175:3)","timestamp":"2024-08-13 20:34:56"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:34:58"}
+{"level":"info","message":"Typing Username: CR-JV-10","timestamp":"2024-08-13 20:35:00"}
+{"level":"info","message":"Typing Password...","timestamp":"2024-08-13 20:35:03"}
+{"level":"info","message":"MainMenu Navigation Successfully...","timestamp":"2024-08-13 20:35:10"}
+{"level":"info","message":"Selecting PatientFile...","timestamp":"2024-08-13 20:35:16"}
+{"level":"info","message":"PatientFile Selected Successfully..","timestamp":"2024-08-13 20:35:16"}
+{"level":"info","message":"Selecting PatientFind...","timestamp":"2024-08-13 20:35:16"}
+{"level":"info","message":"PatientFind Selected Successfully..","timestamp":"2024-08-13 20:35:19"}
+{"level":"info","message":"Typing PatientFind...","timestamp":"2024-08-13 20:35:19"}
+{"level":"info","message":"patientFind Typed Successfully...","timestamp":"2024-08-13 20:35:26"}
+{"level":"info","message":"PatientFind First Entered Pressed..","timestamp":"2024-08-13 20:35:27"}
+{"level":"info","message":"patientFind Second Entered Successfully","timestamp":"2024-08-13 20:35:29"}
+{"level":"info","message":"Selecting PatientRequired...","timestamp":"2024-08-13 20:35:29"}
+{"level":"info","message":"PatientRequired: C Selected Successfully...","timestamp":"2024-08-13 20:35:32"}
+{"level":"info","message":"VisitInfo Choosing...","timestamp":"2024-08-13 20:35:32"}
+{"level":"info","message":"AfterDate Typed Successfully...","timestamp":"2024-08-13 20:35:38"}
+{"level":"info","message":"BeforeDate Typed Successfully...","timestamp":"2024-08-13 20:35:38"}
+{"level":"info","message":"PrintNotes Selected Successfully...","timestamp":"2024-08-13 20:35:39"}
+{"level":"info","message":"PrintOption Selected Successfully...","timestamp":"2024-08-13 20:35:46"}
+{"level":"info","message":"Tab button Clicked.","timestamp":"2024-08-13 20:36:56"}
+{"level":"info","message":"Medical Download Clicked.","timestamp":"2024-08-13 20:37:02"}
+{"level":"info","message":"RPA Automation Process completed and Browser closed.","timestamp":"2024-08-13 20:37:52"}
+{"level":"info","message":"PDF file read and encoded successfully","timestamp":"2024-08-13 20:37:58"}
+{"level":"info","message":"PDF file deleted successfully","timestamp":"2024-08-13 20:37:58"}
+{"level":"error","message":"Error processing at PDF request patientgetpdf is not a function","stack":"TypeError: patientgetpdf is not a function\n    at E:\\Chart\\chartRequest\\Controler\\Chartcontroler\\Chartcontroler.js:96:35\n    at exports.patient (E:\\Chart\\chartRequest\\Controler\\Chartcontroler\\Chartcontroler.js:101:23)\n    at Layer.handle [as handle_request] (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Chart\\chartRequest\\node_modules\\express\\lib\\router\\index.js:175:3)","timestamp":"2024-08-13 20:52:24"}
+{"level":"info","message":"Puppeteer is opened.","timestamp":"2024-08-13 20:52:26"}
+{"level":"info","message":"Typing Username: CR-JV-10","timestamp":"2024-08-13 20:52:29"}
+{"level":"info","message":"Typing Password...","timestamp":"2024-08-13 20:52:31"}
+{"level":"info","message":"MainMenu Navigation Successfully...","timestamp":"2024-08-13 20:52:39"}
+{"level":"info","message":"Selecting PatientFile...","timestamp":"2024-08-13 20:52:44"}
+{"level":"info","message":"PatientFile Selected Successfully..","timestamp":"2024-08-13 20:52:44"}
+{"level":"info","message":"Selecting PatientFind...","timestamp":"2024-08-13 20:52:44"}
+{"level":"info","message":"PatientFind Selected Successfully..","timestamp":"2024-08-13 20:52:47"}
+{"level":"info","message":"Typing PatientFind...","timestamp":"2024-08-13 20:52:48"}
+{"level":"info","message":"patientFind Typed Successfully...","timestamp":"2024-08-13 20:52:54"}
+{"level":"info","message":"PatientFind First Entered Pressed..","timestamp":"2024-08-13 20:52:55"}
+{"level":"info","message":"patientFind Second Entered Successfully","timestamp":"2024-08-13 20:52:57"}
+{"level":"info","message":"Selecting PatientRequired...","timestamp":"2024-08-13 20:52:57"}
+{"level":"info","message":"PatientRequired: C Selected Successfully...","timestamp":"2024-08-13 20:53:00"}
+{"level":"info","message":"VisitInfo Choosing...","timestamp":"2024-08-13 20:53:00"}
+{"level":"info","message":"AfterDate Typed Successfully...","timestamp":"2024-08-13 20:53:06"}
+{"level":"info","message":"BeforeDate Typed Successfully...","timestamp":"2024-08-13 20:53:06"}
+{"level":"info","message":"PrintNotes Selected Successfully...","timestamp":"2024-08-13 20:53:07"}
+{"level":"info","message":"PrintOption Selected Successfully...","timestamp":"2024-08-13 20:53:14"}
+{"level":"info","message":"Tab button Clicked.","timestamp":"2024-08-13 20:54:25"}
+{"level":"info","message":"Medical Download Clicked.","timestamp":"2024-08-13 20:54:30"}
+{"level":"info","message":"RPA Automation Process completed and Browser closed.","timestamp":"2024-08-13 20:55:20"}
+{"level":"info","message":"PDF file read and encoded successfully","timestamp":"2024-08-13 20:55:26"}
+{"level":"info","message":"PDF file deleted successfully","timestamp":"2024-08-13 20:55:26"}
