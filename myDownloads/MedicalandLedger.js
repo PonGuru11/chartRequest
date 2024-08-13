@@ -13,6 +13,7 @@ const MedicalandLedger = async (first_name, last_name, res, recordErrorMsg) => {
     if (recordErrorMsg) {
       const recoredError = "No Medical Records Found"
       const downloadPath = "/home/ec2-user/Downloads";
+      // const downloadPath = "C:/Users/mechg/Downloads";
       const ledgerFileName = "Open Item Ledger.pdf";
       const ledgerFilePath = path.join(downloadPath, ledgerFileName);
 

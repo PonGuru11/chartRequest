@@ -12,7 +12,7 @@ const downloadFile = async (res) => {
     try {
         await sleep(5000);
 
-        // const downloadPath = 'C:/Users/natha/Downloads';
+        // const downloadPath = 'C:/Users/mechg/Downloads';
         const downloadPath = "/home/ec2-user/Downloads";
         const fileName = 'Open Item Ledger.pdf';
         const filePath = path.join(downloadPath, fileName);

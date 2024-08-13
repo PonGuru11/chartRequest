@@ -13,13 +13,13 @@ const downloadFile = async (first_name, last_name, res) => {
     await sleep(5000);
 
     const commanName = "- Daily Note.pdf";
-    // const downloadPath = "C:/Users/natha/Downloads";
+    // const downloadPath = "C:/Users/mechg/Downloads";
     const downloadPath = "/home/ec2-user/Downloads";
     const formattedFirstName = capitalize(first_name);
     const formattedLastName = capitalize(last_name)
-    const fileName = `${formattedLastName} ${formattedFirstName} ${commanName}`;
+    const fileName = `${formattedFirstName} ${formattedLastName} ${commanName}`;
     const filePath = path.join(downloadPath, fileName);
-console.log("file", filePath,fileName)
+    console.log("file", filePath,fileName)
     if (!fs.existsSync(filePath)) {
       patientChartLogger.error(`File not found: ${filePath}`);
       if (!res.headersSent) {

@@ -53,7 +53,8 @@ const patientFile = async(page, dob, first_name, last_name, patient_ID, browser,
     await page.keyboard.press('F', { delay: 3000 });
     patientChartLogger.info('PatientFind Selected Successfully..');
 
-    const patientData = dob + ' ' + first_name + ' ' + last_name;
+    // const patientData = dob + ' ' + first_name + ' ' + last_name;
+    const patientData =  last_name + ' ' + first_name + ' ' + dob;
 
     const patientFindTyping = await page.waitForSelector('.w-field-link-openview');
     if (!patientFindTyping) {

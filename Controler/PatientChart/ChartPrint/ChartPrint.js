@@ -1,8 +1,9 @@
 const { patientChartLogger } = require('../../../Logger/ChartLogger'); 
 const Script_Error = require('../../../Script_Error/Script_Error');
 const NoRecord_Error=require('../../../NoRecord_Error/NoRecord_Error')
+const moment = require('moment')
 
-
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const chartPrintPage = async (page, before_date, after_date,browser,req,res) => {
 
     const beforeDate = await page.waitForSelector('.w-tab-control-tabs');
@@ -28,8 +29,10 @@ const chartPrintPage = async (page, before_date, after_date,browser,req,res) => 
         return;
     }
 
+    var after_date = moment(after_date, 'YYYYMMDD').format('MMDDYY');
+    var before_date = moment(before_date, 'YYYYMMDD').format('MMDDYY');
     await page.keyboard.press('Tab');
-
+await sleep(5000);
     if (after_date) {
         await page.keyboard.type(after_date);
         await page.keyboard.press('Tab',{delay:300});
@@ -41,7 +44,6 @@ const chartPrintPage = async (page, before_date, after_date,browser,req,res) => 
     }
 
  // BeforeDate
-
     if (before_date) {
         await page.keyboard.type(before_date);
         await page.keyboard.press('Tab',{delay:300});
@@ -82,6 +84,7 @@ const chartPrintPage = async (page, before_date, after_date,browser,req,res) => 
         await page.keyboard.press('KeyP', { delay: 5000 });
         await page.keyboard.up('Control');
         patientChartLogger.info("PrintOption Selected Successfully...");
+        await sleep(10000)
     }catch (error) {
        console.log("Error:",error)
        return res.status(500).json({ message: "Error in Record View Page function" });
