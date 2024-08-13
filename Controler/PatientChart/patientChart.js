@@ -40,6 +40,7 @@ const patientChart = async (
     browser = await puppeteer.launch({
       executablePath: "/usr/bin/google-chrome",
       headless: true,
+      // headless : false,
       ignoreDefaultArgs: ["--disable-extensions"],
       args: [
         "--no-sandbox",
@@ -185,7 +186,7 @@ const patientChart = async (
         await page.keyboard.press("Tab", { delay: 5000 });
         await page.click('.button[title="Download"]');
         patientChartLogger.info("Medical Download Clicked.");
-        await sleep(15000);
+        await sleep(30000);
       } else if (type === "Billing") {
         await patientRequiredSelected(page, "Billing", browser, req, res);
         await ledgerAccountPage(page, browser, req, res);
