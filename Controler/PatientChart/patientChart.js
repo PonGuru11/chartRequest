@@ -184,10 +184,13 @@ const patientChart = async (
           req,
           res
         );
+        await sleep(5000)
         await page.keyboard.press("Tab", { delay: 5000 });
+        patientChartLogger.info("Tab button Clicked.");
+        await sleep(5000)
         await page.click('.button[title="Download"]');
         patientChartLogger.info("Medical Download Clicked.");
-        await sleep(40000);
+        await sleep(50000);
       } else if (type === "Billing") {
         await patientRequiredSelected(page, "Billing", browser, req, res);
         await ledgerAccountPage(page, browser, req, res);
