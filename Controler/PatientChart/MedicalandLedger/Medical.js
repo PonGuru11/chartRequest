@@ -100,7 +100,7 @@ const medicalPrint = async (
       await sleep(5000);
       await page.click('.button[title="Download"]');
       patientChartLogger.info("Medical Download Clicked.");
-      await sleep(15000);
+      await sleep(50000);
       await page.keyboard.press("Escape", { delay: 5000 });
       await page.keyboard.press("Escape", { delay: 5000 });
       await sleep(5000);
