@@ -40,9 +40,10 @@ const medicalPrint = async (
     patientChartLogger.error(`Error: ${error.message}`);
     return;
   }
-
+  var after_date = moment(after_date, 'YYYYMMDD').format('MMDDYY');
+  var before_date = moment(before_date, 'YYYYMMDD').format('MMDDYY');
   await page.keyboard.press("Tab");
-
+  await sleep(5000);
   if (after_date) {
     await page.keyboard.type(after_date);
     await page.keyboard.press("Tab", { delay: 300 });
@@ -95,7 +96,7 @@ const medicalPrint = async (
       await page.keyboard.press("KeyP", { delay: 5000 });
       await page.keyboard.up("Control");
       patientChartLogger.info("PrintOption Selected Successfully...");
-
+      await sleep(40000)
       await page.keyboard.press("Tab", { delay: 5000 });
       await sleep(5000);
       await page.click('.button[title="Download"]');
