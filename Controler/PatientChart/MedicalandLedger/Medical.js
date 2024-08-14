@@ -6,6 +6,7 @@ const ledgerAccountPage = require("../../PatientChart/LedgerAccount/LedgerAccoun
 const ledgerPrintPage = require("../../PatientChart/PrintLedger/Printledger");
 const downloadMedicalAndLedgerFile = require("../../../myDownloads/MedicalandLedger");
 const downloadFiles = require('../../../myDownloads/downloadsfile')
+const moment = require('moment')
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const medicalPrint = async (
@@ -40,8 +41,10 @@ const medicalPrint = async (
     patientChartLogger.error(`Error: ${error.message}`);
     return;
   }
+
   var after_date = moment(after_date, 'YYYYMMDD').format('MMDDYY');
   var before_date = moment(before_date, 'YYYYMMDD').format('MMDDYY');
+  
   await page.keyboard.press("Tab");
   await sleep(5000);
   if (after_date) {

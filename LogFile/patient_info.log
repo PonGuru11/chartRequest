@@ -120,3 +120,5 @@
 {"level":"info","message":"RPA Automation Process completed and Browser closed.","timestamp":"2024-08-13 20:55:20"}
 {"level":"info","message":"PDF file read and encoded successfully","timestamp":"2024-08-13 20:55:26"}
 {"level":"info","message":"PDF file deleted successfully","timestamp":"2024-08-13 20:55:26"}
+{"level":"error","message":"Error: Browser was not found at the configured executablePath (/usr/bin/google-chrome)","timestamp":"2024-08-14 11:10:45"}
+{"level":"error","message":"File not found: \\home\\ec2-user\\Downloads\\Jennifer Fuca - Daily Note.pdf","timestamp":"2024-08-14 11:10:50"}
